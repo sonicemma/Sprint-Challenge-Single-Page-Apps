@@ -29,6 +29,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > Answer:
 
+Client side routing is dynamic and responsive to the user's input. It does not force refresh and thus looks better and it makes the site easier to navigate.
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
