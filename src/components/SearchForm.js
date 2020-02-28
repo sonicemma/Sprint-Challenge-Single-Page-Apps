@@ -2,9 +2,9 @@ import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import CharacterCard from "./CharacterCard";
 
-export default function SearchForm() {
-    const [data, setData] = useState([]);
+export default function SearchForm(props) {
     const [search, setSearch] = useState("");
+    const [data, setData] = useState([]);
   
     useEffect(() => {
       Axios.get(`https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/`).then(response => {
@@ -31,12 +31,12 @@ export default function SearchForm() {
             onChange={handleInputChange}
           />
         </form>
-        {data.map(prop => {
+        {data.map(character => {
         return (
           <CharacterCard
-            key={prop.id}
-            name={prop.name}
-            gender={prop.gender}
+            key={character.id}
+            name={character.name}
+            gender={character.gender}
           />
         );
       })}

@@ -18,6 +18,7 @@ export default function App() {
       <Header />
       <Link to="/components/WelcomePage/">Homepage</Link>
       <Link to="/components/CharacterList/">Character Page</Link>
+      <SearchForm />
   
     <Switch>
       <Route path="/components/WelcomePage/">
@@ -25,7 +26,6 @@ export default function App() {
       </Route>
       <Route path="/components/CharacterList/">
         <CharacterList />
-        <SearchForm />
       </Route>
      
     </Switch>
