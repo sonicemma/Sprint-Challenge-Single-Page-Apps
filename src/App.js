@@ -27,6 +27,7 @@ export default function App() {
         <CharacterList />
         <SearchForm />
       </Route>
+     
     </Switch>
     </div>
     </main>

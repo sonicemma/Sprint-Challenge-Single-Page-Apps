@@ -7,7 +7,7 @@ export default function SearchForm() {
     const [search, setSearch] = useState("");
   
     useEffect(() => {
-      Axios.get("https://rickandmortyapi.com/api/character/").then(response => {
+      Axios.get(`https://cors-anywhere.herokuapp.com/https://rickandmortyapi.com/api/character/`).then(response => {
         const character = response.data.results.filter(char =>
           char.name.toLowerCase().includes(search.toLowerCase())
         );

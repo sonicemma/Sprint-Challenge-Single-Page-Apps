@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import CharacterCard from "./CharacterCard";
+import SearchForm from "./SearchForm";
 
 export default function CharacterList() {
   const [data, setData] = useState([]);
@@ -16,6 +17,7 @@ export default function CharacterList() {
 
   return (
     <div className="character-list">
+      <SearchForm />
       {data.map(data => {
         return (
           <CharacterCard 
