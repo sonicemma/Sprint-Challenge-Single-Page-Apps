@@ -12,25 +12,10 @@ import {
 
 export default function App() {
   return (
-    <Router>
     <main>
       <div>
-      <Header />
-      <Link to="/components/WelcomePage/">Homepage</Link>
-      <Link to="/components/CharacterList/">Character Page</Link>
-      <SearchForm />
-  
-    <Switch>
-      <Route path="/components/WelcomePage/">
-        <WelcomePage />
-      </Route>
-      <Route path="/components/CharacterList/">
-        <CharacterList />
-      </Route>
-     
-    </Switch>
+        <Header />
     </div>
     </main>
-    </Router>
   );
 }

@@ -17,7 +17,6 @@ export default function CharacterList() {
 
   return (
     <div className="character-list">
-      <SearchForm />
       {data.map(data => {
         return (
           <CharacterCard 
